@@ -1,0 +1,805 @@
+ 
+/********** fonts **********/
+@font-face {
+    font-family: proxi;
+    src: url(../fonts/proxi.ttf);
+}
+
+/********** colors **********/
+.bg-grey{
+    background-color: #ffffff;
+}
+.bg-black{
+    background-color: #252525;
+}
+.bg-brown{
+    background-color: #f26827;
+}
+.bg-sbc{
+    background-color: #ffffff;
+}
+.bg-cb{
+    background-color:#f3ebe7;
+}
+*{
+    font-family: proxi;
+}
+/********** navbar **********/
+
+.nav-link{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: proxi;
+    letter-spacing: 2px;
+    
+    padding-bottom: 0;
+    border-bottom: 1px solid transparent;
+}
+.nav-link:hover{
+    color: #f26827;
+    border-bottom: 1px solid #f26827;
+    transition: .2s ease;
+}
+#nav{
+    color: #f26827;
+    font-size: 23px;
+    font-weight: bolder;
+}
+.dropdown:hover .nav-link{
+    color: #f26827;
+    border-bottom: 1px solid #f26827;
+    transition: .2s ease;
+    }
+.dropdown-menu{
+    background-color: #252525;
+    color: white;
+}
+.dropdown-header{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 17px;
+    word-spacing: 3px;
+    font-family: proxi;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+
+}
+.dropdown-item:hover{
+    background-color: transparent;
+}
+.dropdown-item{
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+.dropdown-item a{
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: proxi;
+    line-height: 18px;
+    letter-spacing:;
+    text-decoration: none;
+}
+.dropdown-item a:hover{
+    color:#f26827;
+    transition: .2s ease;
+}
+.dropdown-toggle::after {
+    display:none;
+}
+
+/* navbar search field */
+.search-field{
+    height: 32px;
+    font-size: 17px;
+    background-color:#252525;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.search-field:focus{
+    background-color: #252525;
+    border: none;
+    border-bottom: 1px solid white;
+    box-shadow: none;
+    color: white;
+}
+
+
+@media all and (min-width: 768px){
+    .dropdown:hover>.dropdown-menu{
+    display: block;
+    }
+}
+.dropdown-menu{
+    margin-top: 0;
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+/* navbarfont awesome icons styling */
+.fa-search , .fa-user , .fa-shopping-cart , .fa-bars , .fa-facebook-f , .fa-twitter , .fa-instagram , .fa-youtube{
+    color: whitesmoke;
+}
+.fa-facebook-f , .fa-twitter , .fa-instagram , .fa-youtube{
+    font-size: 18px;
+    /* font-weight: 300; */
+}
+.fa-search , .fa-user , .fa-shopping-cart {
+    font-size: 16px;
+    font-weight: 400;
+}
+.fa-bars{
+    font-size: 30px;
+}
+
+
+/********** hero section **********/
+.hero{
+    background-image: linear-gradient(rgba(70,51,0,0.1),rgba(220,102,51,0.01)),url(../images/banner1.jpeg);
+    height: 82vh;
+    background-size: cover;
+    padding-top: 8vh;
+    padding-bottom: 6vh;
+}
+.hero-h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    font-family: proxi;
+    font-weight: 600;
+    opacity: 100;
+}
+.hero-p{
+    color: white;
+    font-size: 1.7rem;
+    line-height: 1.3;
+    text-shadow: 1px 1px 1px #000;
+    padding-left: 0.2rem;
+   font-family: proxi;
+    font-weight: 400;
+}
+.btn-hero{
+    font-size: 17px;
+    font-family: roreg;
+    color: white;
+    text-shadow: none;
+    background-color: #252525;
+}
+.btn-hero:hover{
+    color: black !important;
+    background-color:#f26827  !important;
+    transition: .2s ease !important;
+}
+
+
+
+
+/*********** section1 shop by catagory *********/
+.card-text{
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+    font-family: proxi;
+}
+.item a:hover{
+    text-decoration: none;
+}
+.sbc-h1{
+    color: #002244;
+    text-transform: uppercase;
+    font-size: 37px;
+    font-family: proxi;
+    font-weight: 600;
+    word-spacing: 2px;
+    padding-top: 70px;
+    text-align: center;
+}
+.sbc-h2{
+    color: #002244;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 26px;
+    font-family: proxi;
+    letter-spacing: 1px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center
+}
+.card{
+    border: 0px solid #ffffff;
+    background-color: transparent;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: .5s ease;
+    }
+
+/*owl carousal dots*/
+.owl-dots{
+    margin-top: 0px;
+    color: black;
+}
+.owl-dot.active{
+    transition: all .2s ease;
+    transform: scale(1.3);
+}
+.owl-theme .owl-dots .owl-dot span{
+    width:8px;
+    height:8px;
+    margin:5px 7px;
+    background: black !important;
+    display:block;
+    -webkit-backface-visibility:visible;
+    -webkit-transition:opacity 200ms ease;
+    -moz-transition:opacity 200ms ease;
+    -ms-transition:opacity 200ms ease;
+    -o-transition:opacity 200ms ease;
+    transition:opacity 200ms ease;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+}
+
+
+/*********** section2 why we are better *********/
+.sec2-cards{
+    border: none;
+    background-color: #252525;
+    border-radius: 5px;
+}
+.s2-h{
+   font-family: proxi;
+   font-size: 21px;
+   color: #f26827;
+   font-weight: 600;
+   text-transform: uppercase; 
+}
+.s2-p{
+   font-size: 16px;
+   color: white;
+   font-family: proxi;
+}
+.s2-p:hover{
+   color: white !important;
+}
+/* .sec2-cards:hover p{
+   color: white;
+} */
+.sec2-cards li{
+   color: white;
+}
+/* .sec2-cards:hover{
+    background-color: #252525;
+} */
+.s2-vm{
+   color: #f26827;
+   font-size: 16px;
+}
+/* .sec2-cards:hover .s2-vm{
+   color: #f26827;
+} */
+.list-group-item{
+   border: none;
+}
+.wwrb-h2{
+    color: black;
+    font-size: 35px;
+    font-weight: 500;
+}
+#wwrb-span{
+    color: #f26827;
+    font-size: 35px;
+    font-weight: 500;
+}
+.wvrb-lm a{
+    font-family: crim;
+    font-size: 25px;
+    color:black;
+}
+.wvrb-lm a{
+    text-decoration: none;
+}
+.wvrb-lm a:hover{
+    color: #f26827;
+}
+
+/*********** section3 custumiza handicraft *********/
+.section-3{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(../images/banner2.jpg);
+    height: 80vh;
+    background-size: cover;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+.section3-p{
+    font-size: 2.8rem;
+    /* line-height: 2rem; */
+    text-shadow: 1px 1px 1px #000;
+    padding-left: 0.2rem;
+    font-weight: bolder;
+    color: #f26827;
+    letter-spacing: 1px;
+}
+.section3-h1{
+    font-size: 3.1rem;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    opacity: 80;
+
+    letter-spacing: 1px;
+}
+.section3-p2{
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+/*********** section 4 *********/
+.section4-p a:hover{
+    text-decoration: none;
+    color: #f26827;
+}
+.section4-p a{
+    color: black;
+    font-family: roreg;
+    font-size: 19px;
+}
+/********** footer ***********/
+
+/* footer widget */
+.footer-widget ul{
+    padding: 0;
+    margin: 0;
+}
+.footer-widget li{
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 3px;
+    font-family: proxi;
+}
+.footer-widget li{
+    margin: 0;
+}
+.footer-widget li a{
+    color: white;
+    font-size: 16px;
+    font-family: proxi;
+    text-decoration: none;
+}
+.footer-widget li a:hover{
+    color: #f26827;
+    transition: .2s ease;
+}
+.footer-widget h4{
+    color: #f26827;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: proxi;
+    font-size: 24px;
+}
+
+/*footer newsletter */
+.newsletter{
+    color: white;
+    border: none;
+    border-bottom: 2px solid #f26827;
+    font-family: proxi;
+    background-color: #252525;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.newsletter:focus{
+    color: white;
+    box-shadow: none;
+    border-bottom: 2px solid #f26827;
+    background-color: #252525;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: proxi;
+    letter-spacing: 1px;
+}
+.newsletter-p{
+    color: white;
+    font-family: proxi;
+}
+/* footer copyright */
+#footer{
+    color: whitesmoke;
+    background-color: #323232;
+    padding: 10px 0;
+}
+#footer h4{
+    font-size: 13px;
+}
+
+
+/************************* index page work ends here **************************/
+
+
+/*********** pages *********/
+
+/* login page starts*/
+.login-heading{
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 0px;
+    font-family: roreg;
+}
+.login-with{
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: roreg;
+    letter-spacing: 1px;
+}
+.login-with a{
+    color: white;
+}
+.login-with a:hover{
+    text-decoration: none;
+} 
+.login-fonts{
+    font-size: 16px;
+}
+.login-with:hover{
+    background-color: #26a89b;
+    transition: 200ms ease-in;
+}
+.login-lebel{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: roreg;
+}
+.login-inut{
+    border: 1px solid black;
+    color: black;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: roreg;
+    font-size: 17px;
+}
+.login-inut:focus{
+    box-shadow: none;
+    border: 1px solid black;
+    color: black;
+    font-family: roreg;
+}
+.login-button{
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #86878b;
+    color: white;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px;
+    font-family: roreg;
+}
+.login-button:hover{
+    background-color: #252525;
+    transition: .3s ease;
+}
+.login-button-2{
+    border: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px;
+    font-family: roreg;
+}
+.login-button-2:hover{
+    color: white;
+    background-color: #252525;
+    transition: .3s ease;
+}
+
+.bg-fb{
+    background-color: #3b5998;
+}
+.bg-google{
+    background-color: #dd4b39;
+}
+.bg-twitter{
+    background-color: #55acee;
+}
+.bg-amazon{
+    background-color: #FFCC66;
+}
+.bg-button{
+    background-color: #86878b;
+}
+.forget-p a{
+    color: black;
+    font-size: 14px;
+    font-family: roreg;
+    text-transform: uppercase;
+    float: right;
+}
+.forget-p a:hover{
+    text-decoration: none;
+}
+#loginemailsmall,#loginpwsmall{
+    font-size: 15px;
+}
+/* login page ends */
+
+
+
+
+/* contact-us page starts */
+.cu-form{
+    font-size: 17px;
+    font-family: roreg;
+}
+.cu-lebel{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: roreg;
+}
+.cu-inut{
+    border: 1px solid black;
+    color: black;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: roreg;
+    font-size: 17px;
+}
+.cu-inut:focus{
+    box-shadow: none;
+    border: 1px solid black;
+    color: black;
+    font-family: roreg;
+}
+.cu-button{
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #86878b;
+    color: white;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px;
+    font-family: roreg;
+}
+.cu-button:hover{
+    background-color: #252525;
+    transition: .3s ease;
+}
+.cu-tc{
+    color: #f26827;
+    font-weight: 500;
+    font-size: 16px;  
+}
+.cu-checkbox{
+    font-size: 16px;  
+}
+.cu-info{
+    font-size: 19px;
+    font-family: rogeg;
+    font-weight: 500;
+}
+.cu-icon{
+    font-size: 20px;
+}
+.cud{
+    font-size: 23px;
+    font-family: roreg;
+}
+#cuNamesmall,#cuEmailsmall,#cuTextareasmall{
+    font-size: 15px;
+}
+/* contact-us page ends */
+
+
+
+
+/* faqs */
+.card-body,.card-header{
+    font-size: 16px;
+    font-family: roreg;
+    font-weight: 300;
+}
+.accordion{
+    border: 2px solid black;
+}
+
+
+
+/* about-us page starts */
+.au-card{
+     border: none;
+     border-radius: 3px;
+}
+.au-h{
+    font-family: crim;
+    font-size: 23px;
+    color: #f26827;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.au-p{
+    font-size: 16px;
+    color: black;
+    font-family: roreg;
+}
+.au-card:hover .au-p{
+    color: white !important;
+    transition: none;
+
+}
+.au-card:hover{
+    background-color: #252525;
+    transition: .1s ease;
+}
+.au-lm{
+    color: #f26827;
+    font-size: 19px;
+}
+.au-card:hover .au-lm{
+    color: #f26827;
+}
+
+.map-h2{
+    text-transform: uppercase;
+    font-family: crim;
+    font-weight: 600;
+}
+.map-p{
+    text-transform: uppercase;
+    font-family: roreg;
+    font-size: 17px;
+}
+/* about-us page ends */
+
+
+/* gallery page ends */
+.gallery-heading{
+    text-transform: uppercase;
+    font-family: crim;
+}
+
+.gallery-p{
+    font-family: roreg;
+    padding: 0;
+    font-size: 17px;
+    color: black;
+}
+/* gallery page ends */
+
+
+
+/*********** all catagories pages *********/
+.pro-div a{
+    text-decoration: none;
+}
+.card-pro{
+    border: none;
+}
+.card-pro-name{
+    font-size: 16px;
+    font-family: roreg;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.pro-price{
+    color: black;
+    font-size: 15px;
+}
+
+
+/* all pages main headings */
+.main-headings{
+    text-transform: uppercase;
+    font-family: crim;
+    font-size: 35px;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+.main-headings a{
+    text-decoration: none;
+    color: black;
+
+}
+
+/* all pages breadcrumbs */
+.breadcrumb{
+    background-color: white;
+}
+.breadcrumb .breadcrumb-item:nth-child(2)::before {
+    content: "";
+}
+  .breadcrumb .breadcrumb-item:nth-child(3)::before {
+    content: "";
+}
+.breadcrumb-item a{
+    color: black;
+    font-size: 20px;
+    font-family: roreg;
+    font-weight: 500;
+}
+.breadcrumb-item a:hover{
+    color: #f26827;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Product page */
+.sub-img:{
+    border:1px solid black;
+}
+
+.pp-h2{
+    font-size: 40px;
+    font-family: crim;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.pp-p{
+    font-family: roreg;
+    font-size: 16px;
+
+}
+.pp-price{
+    font-family: roreg;
+    font-size: 24px;
+
+}
+.pp-tns{
+    font-family: roreg;
+    font-size: 17px;
+
+}
+
+
+.atc-btn{
+    border: 1px solid black;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px;
+    font-family: roreg;
+}
+.atc-btn:hover{
+    color: white;
+    background-color: #252525;
+    transition: .3s ease;
+}
+.bin-btn{
+    border: 1px solid #86878b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #86878b;
+    color: white;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px;
+    font-family: roreg;
+}
+.bin-btn:hover{
+    background-color: #252525;
+    transition: .3s ease;
+}
+
+
